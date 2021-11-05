@@ -135,6 +135,10 @@ p {
      max-width: 100%;
      height: auto;
 }
+.image-gallery{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
 .team{
     text-align: center;
 }
@@ -324,10 +328,11 @@ p {
     box-shadow: #8a8a8a 1px 1px 5px;
     max-height: 60px;
     overflow-y: hidden;
-    transition: 0.3s max-height ease-in-out;
+    transition: 0.5s max-height ease-in-out;
 }
 .news-list .active{
-    max-height: 1000px;
+    max-height: 500px;
+    overflow-y: scroll;
 }
 .news-header{
     display: flex;
