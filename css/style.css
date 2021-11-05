@@ -315,16 +315,19 @@ p {
     overflow-x: auto;
     flex-wrap: nowrap;
 }
+#news{
+    margin-bottom: 50px;
+}
 .news-list li{
     border: 1px #c2c2c2 solid;
     margin: 10px;
     box-shadow: #8a8a8a 1px 1px 5px;
     max-height: 60px;
     overflow-y: hidden;
-    transition: 0.5s max-height;
+    transition: 0.3s max-height ease-in-out;
 }
-.news-list li:active{
-    max-height: none;
+.news-list .active{
+    max-height: 1000px;
 }
 .news-header{
     display: flex;
@@ -340,8 +343,7 @@ p {
     padding: 5px;
 }
 .news-list h3{
-    margin-top: 0;
-    margin-right: 5px;
+    margin: 0 10px ;
 }
 .news-list button{
     font-size: 90%;
@@ -1783,6 +1785,15 @@ p {
 }
 .footer {
     background-color: var(--grey);
+}
+footer .row{
+    justify-content: space-around;
+}
+#contact-link{
+    text-decoration: underline;
+    color: rgb(29, 152, 209);
+    cursor: pointer;
+    ;
 }
  .footer .JJcoach {
     margin-top: 45px;

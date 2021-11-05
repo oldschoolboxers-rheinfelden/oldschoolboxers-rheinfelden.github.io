@@ -1,30 +1,28 @@
 /*---------------------------------------------------------------------
-    File Name: custom.js
+	File Name: custom.js
 ---------------------------------------------------------------------*/
 
 $(function () {
 
-	/* News slideout
+	/* slideout function
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 	$(document).ready(function () {
 		document.addEventListener('click', e => {
+			//news
 			const isNewsbutton = e.target.matches('[readNewsButton]')
-			console.log(isNewsbutton);
-			if (!isNewsbutton && e.target.closest('[news]')!=null) return;
+			if (!isNewsbutton && e.target.closest('[news]') != null) return;
 			let currentNews;
-			if (isNewsbutton){
+			if (isNewsbutton) {
 				currentNews = e.target.closest('[news]');
 				currentNews.classList.toggle('active');
-				console.log(currentNews);
 			}
 			document.querySelectorAll('[news].active').forEach(news => {
 				if (news === currentNews) {
-					console.log('return');
 					return
 				}
-				currentNews.classList.remove('active');
-				console.log('removed')
+				news.classList.remove('active');
 			})
+			//gallery
 		})
 	})
 
@@ -80,7 +78,7 @@ $(function () {
 	});
 
 
-	
+
 	/* NiceSelect
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
