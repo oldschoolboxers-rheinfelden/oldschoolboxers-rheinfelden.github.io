@@ -332,7 +332,6 @@ p {
 }
 .news-list .active{
     max-height: 500px;
-    overflow-y: scroll;
 }
 .news-header{
     display: flex;
@@ -342,13 +341,20 @@ p {
 }
 .news-content{
     margin: 20px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.news-content img{
+    max-width: 50%;
+    float: left;
 }
 .news-img{
     max-height: 50px;
     padding: 5px;
 }
 .news-list h3{
-    margin: 0 10px ;
+    margin: 0 10px;
+    text-align: center;
 }
 .news-list button{
     font-size: 90%;
