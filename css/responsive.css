@@ -10,10 +10,24 @@
 }
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
  @media only screen and (min-width: 599px) and (max-width: 767px) {
-     .team_carousel{
-        flex-wrap: wrap;
+     .image-gallery{
+         flex-wrap: wrap;
+         max-height: 600px;
+         overflow-y: scroll;
      }
-    
+     .row.bt_center{
+         display: none;
+     }
+     .right_white{
+         position: unset;
+     }
+     .left_white{
+        position: unset;
+    }
+    #team-carousel{
+        margin-left: 0%;
+        max-width: 100%;
+    }
     .logo {
          text-align: center;
     }
@@ -84,10 +98,24 @@
 }
 /*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
  @media only screen and (min-width: 280px) and (max-width: 599px) {
-    .team_carousel{
+    .image-gallery{
         flex-wrap: wrap;
-     }
-    
+        max-height: 600px;
+        overflow-y: scroll;
+    }
+    .row.bt_center{
+        display: none;
+    }
+    .right_white{
+        position: unset;
+    }
+    .left_white{
+       position: unset;
+   } 
+   #team-carousel{
+    margin-left: 0%;
+    max-width: 100%;
+}
     .cart-content-right {
          padding-bottom: 5px;
     }

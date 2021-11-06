@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <section id="news">
+    <section id="news" class="layout_padding">
         <div class="container">
             <div class="heading margin_top_30">
                 <h2>News</h2>
@@ -187,11 +187,17 @@
                 </ul>
             </div>
         </div>
+        <!-- 
+            <div class="row bt_center">
+            <button class="main_bt">Alle News anzeigen</button>
+        </div>
+        -->
+        
     </section>
 
     <!-- section -->
-    <div id="gallery" class="section dark_bg layout_padding right_white">
-        <div class="container">
+    <div class="section dark_bg layout_padding right_white">
+        <div id="gallery" class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading full text_align_center">
@@ -200,7 +206,29 @@
                 </div>
             </div>
             <div class="row image-gallery">
-                <div class="col-md-4 margin_top_30">
+                <div class="col-md-3 margin_top_30">
+                    <div class="full" style="overflow: hidden;">
+                        <div class="full bl">
+                            <img class="img-responsive" src="images/red-blue-boxing.jpg" alt="#" />
+                        </div>
+                        <div class="full blog_blue text_align_center">
+                            <h5 class="white_font">Datum</h3>
+                                <p>Beschreibung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 margin_top_30">
+                    <div class="full" style="overflow: hidden;">
+                        <div class="full bl">
+                            <img class="img-responsive" src="images/black-white-boxing.jpg" alt="#" />
+                        </div>
+                        <div class="full blog_blue text_align_center">
+                            <h5 class="white_font">Datum</h3>
+                                <p>Beschreibung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 margin_top_30">
                     <div class="full" style="overflow: hidden;">
                         <div class="full bl">
                             <img class="img-responsive" src="images/img.png" alt="#" />
@@ -211,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 margin_top_30">
+                <div class="col-md-3 margin_top_30">
                     <div class="full" style="overflow: hidden;">
                         <div class="full bl">
                             <img class="img-responsive" src="images/img.png" alt="#" />
@@ -222,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 margin_top_30">
+                <div class="col-md-3 margin_top_30">
                     <div class="full" style="overflow: hidden;">
                         <div class="full bl">
                             <img class="img-responsive" src="images/img.png" alt="#" />
@@ -233,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 margin_top_30">
+                <div class="col-md-3 margin_top_30">
                     <div class="full" style="overflow: hidden;">
                         <div class="full bl">
                             <img class="img-responsive" src="images/img.png" alt="#" />
@@ -244,28 +272,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 margin_top_30">
-                    <div class="full" style="overflow: hidden;">
-                        <div class="full bl">
-                            <img class="img-responsive" src="images/img.png" alt="#" />
-                        </div>
-                        <div class="full blog_blue text_align_center">
-                            <h5 class="white_font">Datum</h3>
-                                <p>Beschreibung</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 margin_top_30">
-                    <div class="full" style="overflow: hidden;">
-                        <div class="full bl">
-                            <img class="img-responsive" src="images/img.png" alt="#" />
-                        </div>
-                        <div class="full blog_blue text_align_center">
-                            <h5 class="white_font">Datum</h3>
-                                <p>Beschreibung</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="row bt_center">
+                <button onclick="toggleGalleryView()" class="main_bt">Galerie maximieren</button>
             </div>
         </div>
     </div>
@@ -278,26 +287,20 @@
                 <div class="col-md-6">
                     <img class="img-responsive" src="images/boxing-glove.png" alt="#" />
                 </div>
-                <div section class="section_content col-md-6">
-                    <div class="section_content">
-                        <div class="heading margin_top_30">
-                            <h2>Über Uns</h2>
-                        </div>
-                        <div class="full margin_top_20">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                piece of
-                                classical Latin literature. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip exipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.
+                <div class=" col-md-6">
+                    <div class="heading margin_top_30">
+                        <h2>Über Uns</h2>
+                    </div>
+                    <div class="full margin_top_20">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                            piece of
+                            classical Latin literature. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip exipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
                             ece of
-                                classical Latin literature. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip exipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -306,7 +309,7 @@
     <!-- end about -->
     <!-- section -->
     <div id="team" class="section dark_bg layout_padding left_white">
-        <div class="container">
+        <div id="team-carousel" class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading full text_align_center">
@@ -315,7 +318,7 @@
                 </div>
             </div>
             <div class="row team_carousel">
-                <div class="col-md-4 margin_top_30">
+                <div>
                     <div class="full fr team">
                         <img class="team-img" src="images/user.png" alt="#" />
                     </div>
@@ -323,7 +326,7 @@
                         <h3 class="white_font">Name<br><strong class="accent_color">Trainer</strong></h3>
                     </div>
                 </div>
-                <div class="col-md-4 margin_top_30">
+                <div>
                     <div class="full fr team">
                         <img class="team-img" src="images/user.png" alt="#" />
                     </div>
@@ -331,7 +334,7 @@
                         <h3 class="white_font">Name<br><strong class="accent_color">Trainer</strong></h3>
                     </div>
                 </div>
-                <div class="col-md-4 margin_top_30">
+                <div>
                     <div class="full fr team">
                         <img class="team-img" src="images/user.png" alt="#" />
                     </div>
@@ -339,7 +342,7 @@
                         <h3 class="white_font">Name<br><strong class="accent_color">Trainer</strong></h3>
                     </div>
                 </div>
-                <div class="col-md-4 margin_top_30">
+                <div>
                     <div class="full fr team">
                         <img class="team-img" src="images/user.png" alt="#" />
                     </div>
@@ -347,7 +350,23 @@
                         <h3 class="white_font">Name<br><strong class="accent_color">Trainer</strong></h3>
                     </div>
                 </div>
-                <div class="col-md-4 margin_top_30">
+                <div>
+                    <div class="full fr team">
+                        <img class="team-img" src="images/user.png" alt="#" />
+                    </div>
+                    <div class="full text_align_center">
+                        <h3 class="white_font">Name<br><strong class="accent_color">Trainer</strong></h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="full fr team">
+                        <img class="team-img" src="images/user.png" alt="#" />
+                    </div>
+                    <div class="full text_align_center">
+                        <h3 class="white_font">Name<br><strong class="accent_color">Trainer</strong></h3>
+                    </div>
+                </div>
+                <div>
                     <div class="full fr team">
                         <img class="team-img" src="images/user.png" alt="#" />
                     </div>
@@ -375,9 +394,15 @@
                     </div>-->
                 </div>
                 <div class="col-md-6 margin_top_30 padding_right_0">
-                    <img id='img_boxing_gif' src="images/alexandre-muttoni-gif-line.gif"
-                        alt="credit: https://www.artstation.com/artwork/4bDRb1" />
+                    <figure>
+                        <img id='img_boxing_gif' src="images/alexandre-muttoni-gif-line.gif"
+                            alt="boxing animated Gif" />
+                        <figcaption><a href="https://www.artstation.com/artwork/4bDRb1">www.artstation.com/"2D Boxing Animation" by
+                                Alexandre Muttoni</a>
+                        </figcaption>
+                    </figure>
                 </div>
+
             </div>
         </div>
     </div>

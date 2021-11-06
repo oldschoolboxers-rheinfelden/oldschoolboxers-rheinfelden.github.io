@@ -2,6 +2,22 @@
 	File Name: custom.js
 ---------------------------------------------------------------------*/
 
+function toggleGalleryView() {
+	$('.image-gallery').toggleClass('expanded-gallery');
+	
+	if($('.image-gallery').hasClass('expanded-gallery')){
+		$('#gallery .col-md-3').addClass('col-md-4');
+		$('#gallery .col-md-4').removeClass('col-md-3');
+		$('.bt_center button').html('Galerie minimieren')
+	}
+	else{
+		$('#gallery .col-md-4').addClass('col-md-3');
+		$('#gallery .col-md-3').removeClass('col-md-4');
+		$('.bt_center button').html('Galerie maximieren')
+	}
+	
+}
+
 $(function () {
 
 	/* slideout function

@@ -135,9 +135,17 @@ p {
      max-width: 100%;
      height: auto;
 }
+#gallery{
+    margin-right: 5%;
+    max-width: 80%;
+}
 .image-gallery{
     flex-wrap: nowrap;
     overflow-x: scroll;
+}
+.image-gallery.expanded-gallery{
+    flex-wrap: wrap;
+    overflow-x: auto;
 }
 .team{
     text-align: center;
@@ -145,8 +153,24 @@ p {
 .team-img{
     max-height: 200px;
 }
+.team_carousel {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+.team_carousel > div{
+    margin: 45px;
+}
+#team-carousel{
+    margin-left: 5%;
+    max-width: 80%;
+}
 #img_boxing_gif{
-    max-height: 850px;
+    max-width: 145%;
+}
+figcaption{
+    text-align: right;
+    font-size: smaller;
+    font-style: italic;
 }
  :focus {
      outline: 0;
@@ -190,12 +214,16 @@ p {
      width: 100%;
 }
  .layout_padding {
-     padding-top: 90px;
-     padding-bottom: 90px;
+     padding-top: 80px;
+     padding-bottom: 80px;
 }
  .layout_padding_2 {
      padding-top: 75px;
      padding-bottom: 75px;
+}
+.layout_padding.dark_bg{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
  .light_silver {
      background: #f9f9f9;
@@ -277,27 +305,34 @@ p {
      font-weight: 600;
 }
 .main_bt {
-    background: var(--grey);
+    background: var(--accentColor2);
     color: #fff;
     padding: 0;
     float: left;
-    font-size: 20px;
+    font-size: large;
     font-weight: 300;
     border-radius: 0;
-    margin-right: 0;
-    width: 220px;
-    height: 65px;
+    margin-top: 50px;
+    width: 200px;
+    height: 55px;
     text-align: center;
-    line-height: 65px;
+    line-height: 55px;
+    transition: .2s background ease-in-out;
+}
+.bt_center{
+    justify-content: center;
 }
  a.readmore_bt {
      color: #fff;
      font-weight: 300;
      text-decoration: underline !important;
 }
- .main_bt:hover, .main_bt:focus {
+ .main_bt:hover {
      background: var(--accentColor);
      color: #fff;
+}
+.main_bt:active{
+    color: var(--grey);
 }
 .button_section {
     padding-top: 185px;
@@ -314,10 +349,6 @@ p {
 }
  .ul_list_info_icon ul li img {
      width: 75px;
-}
-.team_carousel {
-    overflow-x: auto;
-    flex-wrap: nowrap;
 }
 #news{
     margin-bottom: 50px;
@@ -2032,7 +2063,7 @@ footer .row{
 }
 .blog_blue::after {
     width: 110%;
-    height: 50px;
+    height: 55px;
     content: "";
     display: block;
     position: absolute;
@@ -2044,10 +2075,6 @@ footer .row{
 header {
     position: relative;
     z-index: 999;
-}
-button.main_bt {
-    background: var(--accentColor);
-    color: #111;
 }
 footer p a {
     color: #fff;
