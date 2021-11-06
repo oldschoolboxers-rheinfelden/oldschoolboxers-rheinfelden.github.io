@@ -1564,6 +1564,14 @@ p {
     text-align: left;
     color: var(--grey);
 }
+.about .section_content{
+    max-height: 400px;
+    overflow-y: hidden;
+    transition: 0.5s max-height ease-in-out;
+}
+.about .active{
+    max-height: 1000px;
+}
 .about hr{
     margin: 0;
 }

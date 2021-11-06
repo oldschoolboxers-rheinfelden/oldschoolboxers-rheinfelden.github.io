@@ -22,7 +22,20 @@ $(function () {
 				}
 				news.classList.remove('active');
 			})
-			//gallery
+			//section
+			const isSectionbutton = e.target.matches('[section-button]')
+			if (!isSectionbutton && e.target.closest('[section]') != null) return;
+			let currentSection;
+			if (isSectionbutton) {
+				currentSection = e.target.closest('[section]');
+				currentSection.classList.toggle('active');
+			}
+			document.querySelectorAll('[section]').forEach(section => {
+				if (section === currentSection) {
+					return
+				}
+				section.classList.remove('active');
+			})
 		})
 	})
 
